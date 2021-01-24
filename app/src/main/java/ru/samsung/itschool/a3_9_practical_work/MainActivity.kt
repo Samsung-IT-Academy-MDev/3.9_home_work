@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
             override fun onActionItemClicked(p0: ActionMode?, p1: MenuItem?): Boolean {
                 // здесь обрабатываются клики на элементы контекстного AppBar
+                if(p1!!.itemId == R.id.search)
+                    Toast.makeText(applicationContext, "search", Toast.LENGTH_SHORT).show()
+                if(p1!!.itemId == R.id.gallery)
+                    Toast.makeText(applicationContext, "gallery", Toast.LENGTH_SHORT).show()
                 p0!!.finish()
                 return false
             }
