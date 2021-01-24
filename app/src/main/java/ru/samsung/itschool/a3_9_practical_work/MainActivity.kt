@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
         //menuInflater.inflate(R.menu.menu_main, menu)
         menu!!.add(Menu.NONE, 101, Menu.NONE, "Открыть");
         menu!!.add(Menu.NONE, 102, Menu.NONE, "Сохранить");
+        menu!!.add(Menu.NONE, 103, Menu.NONE, "Выйти");
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
